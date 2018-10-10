@@ -11,17 +11,15 @@ var chocolateBars = [
   }
 
   function destructivelyAddElementToBeginningOfArray(array, element) {
-    array.unshift(element)
-    return array
+    return array.unshift(element)
   }
   
   function addElementToEndOfArray(array, element) {
-   return [...array, element] 
+   return [...array, element] ;
  }
  
  function destructivelyAddElementToEndOfArray(array, element) {
-    array.push(element)
-    return array
+    return array.push(element);
  }
  
   function accessElementInArray(array, index) {
@@ -33,17 +31,16 @@ function removeElementFromBeginningOfArray(array){
 }
 
 function destructivelyRemoveElementFromBeginningOfArray(array){
-  array.shift()
-  return array
+  return array.shift()
+  
 }
 
 
 function destructivelyRemoveElementFromEndOfArray(array){
-  array.pop()
-  return array
+  return array.pop()
 }
 
 function removeElementFromEndOfArray(array) {
- return array.slice(0, array.length - 1) 
+ return array.slice(0,- 1) 
 }
 
